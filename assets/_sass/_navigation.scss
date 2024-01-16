@@ -1,0 +1,42 @@
+nav ul {
+  text-align: center;
+  margin: 0;
+
+  > li {
+    display: block;
+
+    > a {
+      border-radius: 0;
+      color: #555555;
+
+      &:hover {
+        color: #222222;
+      }
+    }
+
+    &.active > a,
+    &.active > a:focus,
+    &.active > a:hover {
+      background-color: transparent;
+      border-bottom: 1px solid $color-primary;
+      color: #555555;
+    }
+  }
+}
+
+@media screen and (min-width: $screen-medium) {
+  nav {
+    display: table !important;
+    margin: auto 0 !important;
+    padding-top: 1rem !important;
+
+    ul {
+      display: table-row;
+      vertical-align: middle;
+
+      > li {
+        display: table-cell;
+      }
+    }
+  }
+}

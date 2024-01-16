@@ -1,0 +1,32 @@
+// Modules
+$enable-blockquote: true !default;
+$enable-button: true !default;
+$enable-code: true !default;
+$enable-divider: true !default;
+$enable-form: true !default;
+$enable-grid: true !default;
+$enable-link: true !default;
+$enable-list: true !default;
+$enable-table: true !default;
+$enable-typography: true !default;
+$enable-image: true !default;
+
+// Color
+$color-initial: #fff !default;
+$color-primary: #9b4dca !default;
+$color-secondary: #606c76 !default;
+$color-tertiary: #f4f5f6 !default;
+$color-quaternary: #d1d1d1 !default;
+$color-quinary: #e1e1e1 !default;
+
+// Typography;
+$body-line-height: 1.6 !default;
+$font-family: "Roboto", "Helvetica Neue", "Helvetica", "Arial", sans-serif !default;
+$headings-color: $color-primary;
+$headings-font-weight: initial !default;
+
+// Screen sizes
+$screen-small: 0rem !default;
+$screen-medium: 26.25rem !default;
+$screen-large: 50rem !default;
+$screen-xlarge: 100rem !default;

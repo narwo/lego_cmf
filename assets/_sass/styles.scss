@@ -1,0 +1,157 @@
+@charset 'utf-8';
+
+$enable-divider: false;
+$enable-form: false;
+$enable-image: false;
+$body-line-height: 1.4;
+$color-primary: #3382A0;
+$font-family: "Roboto", sans-serif;
+
+@import "framework/index";
+@import "navigation";
+
+html {
+  background-color: white;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 768px !important;
+  padding: 0px 20px;
+}
+
+h1 {
+  margin-top: 10.5px;
+  margin-bottom: 5.25px;
+}
+
+h2 {
+  margin-top: 21px;
+}
+
+h2,
+h3 {
+  margin-bottom: 0;
+}
+
+h3 {
+  margin-top: 16px;
+}
+
+header h1 {
+  font-size: 2.6rem;
+  font-weight: 100;
+  margin: 1rem 0;
+  padding: 0;
+  text-align: center;
+  text-transform: uppercase;
+
+  a:hover,
+  a:focus {
+    color: $color-primary;
+  }
+}
+
+article {
+  font-size: 0.875em;
+
+  img {
+    display: block;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  h2 {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 4px;
+  }
+
+  h4 {
+    text-align: center;
+    color: #333;
+    font-size: 17px;
+    margin-top: 0;
+  }
+
+  code {
+    color: #333;
+    background-color: transparent;
+  }
+
+  i {
+    font-size: 0.875em;
+  }
+}
+
+footer {
+  border-top: thin solid #eeeeee;
+  clear: both;
+  padding: 8px 0;
+  text-align: center;
+  font-size: 0.875rem;
+
+  > p {
+    color: #777777;
+    margin: 0;
+  }
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  text-align: left;
+  display: inline-block;
+  margin: 1rem auto;
+
+  > li {
+    margin-bottom: 4px;
+
+    &:before {
+      content: "☺︎";
+      margin-right: 10px;
+    }
+  }
+}
+
+@media screen and (min-width: $screen-medium) {
+  header h1 {
+    font-size: 3.2rem;
+  }
+  article {
+    > h2,
+    > h4 {
+      text-align: left;
+    }
+  }
+}
+
+@media screen and (min-width: 36rem) {
+  article {
+    > img {
+      float: left;
+      margin: 0px 16px 10px 0px;
+      width: unset;
+    }
+  }
+}
+
+@media screen and (min-width: $screen-large) {
+  html {
+    background-color: #f8f8f8;
+  }
+  body {
+    background-color: white;
+    margin: 20px auto;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  }
+  header h1 {
+    font-size: 3.6rem;
+    text-align: left;
+  }
+}
+
+// Import components
+// @import "giglist";
+// @import "jumbotron";
+// @import "tracklist";

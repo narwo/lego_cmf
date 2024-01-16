@@ -1,0 +1,31 @@
+---
+---
+
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+        <meta charset="utf-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Collectable Minifigs | narwo.dev</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,300" rel="stylesheet">
+        <link rel="stylesheet" href="{{site.baseurl}}/assets/css/styles.css">
+</head>
+
+<body>
+        <header class="row row-wrap">
+                <h1 class="column"><a href="index.html">Collectable Minifigs</a></h1>
+        </header>
+        <article>
+                {{content}}
+        </article>
+        <footer>
+                <p>&copy; 2023 - {{ site.time | date: '%Y' }} narwo</p>
+                <p>This site is not affiliated or endorsed by The Lego Group.</p>
+                <p>LEGO, the LEGO logo, the Minifigure, and the Brick and Knob configurations are trademarks of the LEGO Group of Companies. &copy;{{ site.time | date: '%Y' }} The LEGO Group.</p>
+        </footer>
+        {% include google-analytics.html %}
+</body>
+
+</html>

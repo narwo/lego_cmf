@@ -1,0 +1,40 @@
+// Utility
+
+// Clear float with .clearfix
+.clearfix {
+  &:after {
+    clear: both;
+    content: " "; // Using a space in content avoids a bug in Opera.
+    display: table;
+  }
+}
+
+// Float either direction
+.float-left {
+  float: left;
+}
+.float-right {
+  float: right;
+}
+
+.hidden {
+  display: none !important;
+}
+.show\@s {
+  display: block !important;
+}
+@media (min-width: $screen-medium) {
+  .show\@m {
+    display: block !important;
+  }
+}
+@media (min-width: $screen-large) {
+  .show\@l {
+    display: block !important;
+  }
+}
+@media (min-width: $screen-xlarge) {
+  .show\@xl {
+    display: block !important;
+  }
+}

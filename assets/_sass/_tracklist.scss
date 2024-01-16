@@ -1,0 +1,18 @@
+.tracklist {
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+    text-align: left;
+    display: inline-block;
+    margin: 1rem auto;
+
+    > li {
+      margin-bottom: 4px;
+
+      &:before {
+        content: "♪";
+        margin-right: 15px;
+      }
+    }
+  }
+}
